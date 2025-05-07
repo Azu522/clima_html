@@ -1,6 +1,6 @@
 :root {
--white: #ffffff;
--primary: #F59E0B;
+--white: #ffffff;
+--primary: #F59E0B;
 }
 
 .title {
@@ -13,13 +13,13 @@ html {
 font-size: 62.5%;
 }
 
-.body {
+body {
 font-family: "Outfit", sans-serif;
-background-image: url("/bg_clima.jpg");
+background-image: url("bg_clima.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 height: 100vh;
-color: var (--white);
+color: var(--white);
 font-size: 2rem;
 }
 
@@ -32,7 +32,7 @@ margin: 0 auto;
 @media (min-width: 768px) {
 .container {
 display: grid;
-grid-template-columns: repeat (2, 1fr);
+grid-template-columns: repeat(2, 1fr);
 align-items: center;
 gap: 4rem;
 margin-top: 5rem;
@@ -40,7 +40,7 @@ margin-top: 5rem;
 }
 /*Estilos del formulario*/
 
-.form, field {
+.form, .field {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -54,9 +54,9 @@ margin-top: 5rem;
     
     background-color: transparent;
     
-    border: 0.3rem solid var (--white);
+    border: 0.3rem solid var(--white);
     
-    color: var (--white);
+    color: var(--white);
     
     font-size: 1.8rem;
     
@@ -81,8 +81,8 @@ margin-top: 5rem;
     }
     /* Estilos del contenedor de clima */
 
-weather-card {
-background-color: var(-white);
+.weather-card {
+background-color: var(--white);
 color: black;
 border-radius: 1rem;
 text-align: center;
@@ -96,7 +96,8 @@ margin: 0;
 }
 
 .temperatures {
-display: flex; justify-content: center;
+display: flex; 
+justify-content: center;
 gap: 5rem;
 }
 
